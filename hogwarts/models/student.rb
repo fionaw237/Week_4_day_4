@@ -2,7 +2,7 @@ require_relative("../db/sql_runner.rb")
 
 class Student
 
-  attr_reader :id
+  attr_reader :id, :house_id
   attr_accessor :first_name, :last_name, :house, :age
 
   def initialize(options)
@@ -11,6 +11,7 @@ class Student
     @last_name = options['last_name']
     @house = options['house']
     @age = options['age'].to_i()
+    @house_id = options['house_id'].to_i()
   end
 
   def self.delete_all()
@@ -19,9 +20,9 @@ class Student
   end
 
   def save()
-    sql = "INSERT INTO students (first_name, last_name, house, age) VALUES ($1, $2, $3, $4)
+    sql = "INSERT INTO students (first_name, last_name, house, age, house_id) VALUES ($1, $2, $3, $4, $5)
     RETURNING id"
-    values = [@first_name, @last_name, @house, @age]
+    values = [@first_name, @last_name, @house, @age, @house_id]
     result = SqlRunner.run(sql, values).first()
     @id = result['id'].to_i()
   end
