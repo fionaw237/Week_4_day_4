@@ -8,7 +8,6 @@ CREATE TABLE houses(
 );
 
 
-
 CREATE TABLE students (
   id SERIAL PRIMARY KEY,
   first_name VARCHAR(255),

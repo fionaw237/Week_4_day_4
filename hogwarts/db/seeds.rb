@@ -3,6 +3,7 @@ require_relative("../models/house.rb")
 require("pry-byebug")
 
 Student.delete_all()
+House.delete_all()
 
 
 
@@ -53,3 +54,5 @@ draco.save()
 
 #p Student.all()
 # p Student.find_by_id(24)
+# p House.all() #
+# p  House.find_by_id(7) #works
