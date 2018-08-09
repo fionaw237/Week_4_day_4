@@ -23,6 +23,22 @@ slytherin = House.new(
 
 slytherin.save()
 
+hufflepuff = House.new(
+  {
+    'name' => 'Hufflepuff',
+    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/5/50/0.51_Hufflepuff_Crest_Transparent.png/revision/latest/scale-to-width-down/433?cb=20161020182518'>"
+    })
+
+hufflepuff.save()
+
+ravenclaw = House.new(
+  {
+    'name' => 'Ravenclaw',
+    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/2/29/0.41_Ravenclaw_Crest_Transparent.png/revision/latest/scale-to-width-down/433?cb=20161020182442'>"
+    })
+
+ravenclaw.save()
+
 
 
 
@@ -30,7 +46,6 @@ harry = Student.new(
   {
     'first_name' => 'Harry',
     'last_name' => 'Potter',
-    'house' => 'Gryffindor',
     'age' => 11,
     'house_id' => gryffindor.id
   }
@@ -40,7 +55,6 @@ draco = Student.new(
   {
     'first_name' => 'Draco',
     'last_name' => 'Malfoy',
-    'house' => 'Slytherin',
     'age' => 11,
     'house_id' => slytherin.id
   }
@@ -55,4 +69,7 @@ draco.save()
 #p Student.all()
 # p Student.find_by_id(24)
 # p House.all() #
-# p  House.find_by_id(7) #works
+# # p  House.find_by_id(7) #works
+# p harry.house() #works
+# p draco.house() #works
+# p House.all() #works

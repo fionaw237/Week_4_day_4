@@ -1,4 +1,4 @@
-<h1>Create New Student</h1>
+<h1>Sort New Student</h1>
 
 <form action="/hogwarts" method="post">
 
@@ -9,11 +9,10 @@
   <input id="last-name" type="text" name="last_name" required>
   <br>
   <label for="house-select">Select house: </label>
-  <select id="house-select" name="house">
-    <option value="Gryffindor">Gryffindor</option>
-    <option value="Slytherin">Slytherin</option>
-    <option value="Ravenclaw">Ravenclaw</option>
-    <option value="Hufflepuff">Hufflepuff</option>
+  <select id="house-select" name="house_id">
+    <% @houses.each do |house|  %>
+    <option value= <%="#{house.id}"%>><%= house.name  %> </option>
+    <% end %>
   </select>
   <br>
   <label for="age-select">Enter age:</label>
