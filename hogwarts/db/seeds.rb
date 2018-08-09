@@ -10,7 +10,7 @@ House.delete_all()
 gryffindor = House.new(
   {
     'name' => 'Gryffindor',
-    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/8/8e/0.31_Gryffindor_Crest_Transparent.png/revision/latest/scale-to-width-down/432?cb=20161124074004'>"
+    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/8/8e/0.31_Gryffindor_Crest_Transparent.png/revision/latest/scale-to-width-down/432?cb=20161124074004' alt='Gryffindor crest' width='300' height='300'>"
     })
 
 gryffindor.save()
@@ -18,7 +18,7 @@ gryffindor.save()
 slytherin = House.new(
   {
     'name' => 'Slytherin',
-    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/d/d3/0.61_Slytherin_Crest_Transparent.png/revision/latest/scale-to-width-down/427?cb=20161020182557'>"
+    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/d/d3/0.61_Slytherin_Crest_Transparent.png/revision/latest/scale-to-width-down/427?cb=20161020182557' alt='Slytherin crest' width='300' height='300'>"
     })
 
 slytherin.save()
@@ -26,7 +26,7 @@ slytherin.save()
 hufflepuff = House.new(
   {
     'name' => 'Hufflepuff',
-    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/5/50/0.51_Hufflepuff_Crest_Transparent.png/revision/latest/scale-to-width-down/433?cb=20161020182518'>"
+    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/5/50/0.51_Hufflepuff_Crest_Transparent.png/revision/latest/scale-to-width-down/433?cb=20161020182518' alt='Hufflepuff crest' width='300' height='300'>"
     })
 
 hufflepuff.save()
@@ -34,7 +34,7 @@ hufflepuff.save()
 ravenclaw = House.new(
   {
     'name' => 'Ravenclaw',
-    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/2/29/0.41_Ravenclaw_Crest_Transparent.png/revision/latest/scale-to-width-down/433?cb=20161020182442'>"
+    'badge' => "<img src='https://vignette.wikia.nocookie.net/harrypotter/images/2/29/0.41_Ravenclaw_Crest_Transparent.png/revision/latest/scale-to-width-down/433?cb=20161020182442' alt='Ravenclaw crest' width='300' height='300'>"
     })
 
 ravenclaw.save()

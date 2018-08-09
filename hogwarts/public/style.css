@@ -1,0 +1,40 @@
+h1 {
+  font-family: 'Helvetica';
+}
+
+body {
+  font-color: white;
+  background-image: url("https://ae01.alicdn.com/kf/HTB1XBK3e0rJ8KJjSspaq6xuKpXaJ/Harry-Potter-hogwarts-castle-tree-night-sky-Light-backdrops-Vinyl-cloth-Computer-print-wall-photo-studio.jpg_640x640.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+p {
+  color: white;
+}
+
+nav {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+form {
+  color: white;
+}
+
+ul {
+  border: 1pt solid white;
+}
+
+/*body {
+  background-color: lightgrey;
+  font-family: helvetica;
+  color: darkslategrey;
+}*/
